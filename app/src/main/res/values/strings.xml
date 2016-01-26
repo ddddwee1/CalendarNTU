@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CalendarNTU</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="AppStart">App start!</string>
+    <string name="instruction1">I am annoyed by the course registration,, so I decided to develop such an app to help planning courses.</string>
+
+    <string name="instruction2">I use algorithms to speed up the progress but it is still unsatisfactory. The computational complexity increase exponentially with the number of courses.</string>
+    <string name="instruction3">It will take less than 1 second to come up with more than 50 thousand candidates with 7 courses but take 30 seconds to compute out 200 candidates with 10 courses.</string>
+    <string name="instruction4">There are some settings in the setting page. If you have any good idea or suggestion, send me a message in app.</string>
+
+
+    <string name="instruction5">In this app you can plan your courses(of course -.-), save your schedule</string>
+    <string name="courseHint">Input coursecode</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+    <string name="title_activity_planner">PlannerActivity</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_my_calendar">MyCalendarActivity</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_index">IndexActivity</string>
+
+    <string name="ic_check_circle_blank">&#xe03e;</string>
+    <string name="ic_keyboard_arrow_down">&#xe0c5;</string>
+    <string name="ic_keyboard_arrow_left">&#xe0c6;</string>
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_drive_ms_excel">&#xe079;</string>
+</resources>

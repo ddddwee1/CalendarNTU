@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.potato.potato.calendarntu.CustomViews.GenerateTimetable;
 
@@ -139,11 +140,15 @@ public class PlannerActivity extends AppCompatActivity {
             if (listNumber>0){
                 listNumber--;
                 gt.refreshView(app.getTree().getNodeList().get(listNumber).getIndexes(),app.getCourses());
+                String text = "Choice number "+listNumber+" of total "+app.getTree().getNodeList().size();
+                Toast ts = Toast.makeText(PlannerActivity.this,text,Toast.LENGTH_SHORT);
             }
         }if (id==3){
             if (listNumber<app.getCourses().size()-1){
                 listNumber++;
                 gt.refreshView(app.getTree().getNodeList().get(listNumber).getIndexes(),app.getCourses());
+                String text = "Choice number "+listNumber+" of total "+app.getTree().getNodeList().size();
+                Toast ts = Toast.makeText(PlannerActivity.this,text,Toast.LENGTH_SHORT);
             }
         }
         return super.onOptionsItemSelected(item);

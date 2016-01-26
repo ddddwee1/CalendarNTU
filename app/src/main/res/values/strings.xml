@@ -13,6 +13,9 @@
     <string name="instruction5">In this app you can plan your courses(of course -.-), save your schedule</string>
     <string name="courseHint">Input coursecode</string>
 
+    <string name="oneDay">One day free!</string>
+    <string name="conce">More tight!</string>
+
     <string name="hello_world">Hello world!</string>
 
 

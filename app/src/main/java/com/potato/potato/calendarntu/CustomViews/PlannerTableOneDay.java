@@ -17,7 +17,7 @@ public class PlannerTableOneDay {
     RelativeLayout rl;
     ArrayList<Integer> topList,btmList,columList,leftList,stepList;
     ArrayList<TextView> tvList,tvList2;
-    ArrayList<ArrayList<Integer>> relations;
+    //ArrayList<ArrayList<Integer>> relations;
     int column,maxWidth;
     int[] resources = {R.drawable.coursebg,R.drawable.coursebg2,R.drawable.coursebg3,R.drawable.coursebg4,
             R.drawable.coursebg5,R.drawable.coursebg6,R.drawable.coursebg7,R.drawable.coursebg8,R.drawable.coursebg9,R.drawable.coursebg10};

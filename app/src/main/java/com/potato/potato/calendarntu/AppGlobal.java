@@ -15,13 +15,14 @@ public class AppGlobal extends Application {
     private ArrayList<Course> courses = new ArrayList<>(),courses2 = new ArrayList<>();
     private TreeCpr tree;
     private ArrayList<int[]> banTime = new ArrayList<>();
+    private boolean oneDayFree = false, isConcentrate = false;
 
     public ArrayList<Course> getCourses() {
         return courses;
     }
 
     public void newTree(){
-        tree = new TreeCpr(courses2,5);
+        tree = new TreeCpr(courses2,5,oneDayFree,isConcentrate);
     }
 
     //Better new the course list here
@@ -70,7 +71,13 @@ public class AppGlobal extends Application {
         //tree.changeTree();
     }
     public void reGenerate(){
-        tree = new TreeCpr(courses2,5);
+        tree = new TreeCpr(courses2,5,oneDayFree,isConcentrate);
+    }
+
+    public void refreshNodes(){
+        tree.setConcentrate(isConcentrate);
+        tree.setOneDay(oneDayFree);
+        tree.applySetting();
     }
     public void refreshCs2(){
         courses2 = new ArrayList<>();
@@ -100,9 +107,7 @@ public class AppGlobal extends Application {
         }
     }
 
-    public void setBanTime(ArrayList<int[]> banTime){
-        this.banTime = banTime;
-    }
+
 
     public boolean isInList(String title){
         for(int i=0;i<courses.size();i++){
@@ -146,6 +151,18 @@ public class AppGlobal extends Application {
                 }
             }
         }
+    }
+
+        /*public void setBanTime(ArrayList<int[]> banTime){
+        this.banTime = banTime;
+    }*/
+
+    public void setOneDayFree(boolean oneDayFree) {
+        this.oneDayFree = oneDayFree;
+    }
+
+    public void setIsConcentrate(boolean isConcentrate) {
+        this.isConcentrate = isConcentrate;
     }
 }
 //get another array to store the banned result
